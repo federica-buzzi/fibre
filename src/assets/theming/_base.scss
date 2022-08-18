@@ -22,6 +22,7 @@ body {
   height: 100vh;
   line-height: 140%;
   min-width: 320px;
+
   a {
     text-decoration: none;
     color: inherit;
@@ -37,20 +38,19 @@ header {
   display: flex;
   justify-content: space-between;
   height: 4em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 
   div {
     border: solid 1px white;
-    margin-left: 2.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 3rem;
     width: 100px;
   }
 
   nav {
     border: solid 1px black;
-    margin-right: 2.5em;
     font-size: 3rem;
     display: flex;
     flex-direction: column;
@@ -100,12 +100,11 @@ footer > p {
 
   h1 {
     font-family: $display-font;
-    line-height: 140%;
     font-size: 4em;
   }
   p {
+    font-family: $body-font;
     width: 30%;
     margin-bottom: 2em;
-    font-family: $body-font;
   }
 }
