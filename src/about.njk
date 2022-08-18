@@ -5,14 +5,23 @@ eleventyNavigation:
   order: 1
 ---
 <div class="regular-page">
-  <h1>About</h1>
-
-  <p>Il Trio FiBre ha l'obiettivo di scoprire compositori coevi e spaziare dalla Musica del '900 alla Contemporanea all' Elettronica e alla compartecipazione di arti musicali e visive nelle loro più creative possibilità.</p>
-
-  <p>Il Trio FiBre nasce a Firenze nel 2022, i musicisti che lo compongono hanno tutti compiuto gli studi presso il Conservatorio di Firenze e hanno svolto attività concertistica da camera, sinfonica e contemporanea per importanti istituzioni.</p>
-
+  <div class="text-controls-container">
+    <h1>About</h1>
+    <p>Il Trio FiBre ha l'obiettivo di scoprire compositori coevi e spaziare dalla Musica del '900 alla Contemporanea all' Elettronica e alla compartecipazione di arti musicali e visive nelle loro più creative possibilità.</p>
+    <p>Il Trio FiBre nasce a Firenze nel 2022, i musicisti che lo compongono hanno tutti compiuto gli studi presso il Conservatorio di Firenze e hanno svolto attività concertistica da camera, sinfonica e contemporanea per importanti istituzioni.</p>
+    <div class="controls-container">
+      <div class="control">
+       {% include "./_includes/components/chevron-left.njk" %}
+      </div>
+      <div class="control">
+        {% include "./_includes/components/chevron-right.njk" %}
+      </div>
+    </div>
+  </div>
   <div class="card-container">
-
+    <div class="card">I am card 1</div> 
+    <div class="card">I am card 2</div>
+    <div class="card">I am card 3</div>
   </div>
 
 </div>

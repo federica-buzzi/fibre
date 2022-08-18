@@ -96,15 +96,50 @@ footer > p {
 }
 
 .regular-page {
-  margin: 3.5em;
+  padding: 5.5em 0 3.5em 3.5em;
+  display: flex;
+  justify-content: space-between;
+  background-color: $purple;
+  color: white;
+  height: 100vh;
 
-  h1 {
-    font-family: $display-font;
-    font-size: 4em;
+  .text-controls-container {
+    width: 40%;
+    h1 {
+      font-family: $display-font;
+      font-size: 6rem;
+      margin-bottom: 1em;
+    }
+    p {
+      font-family: $body-font;
+      font-size: 1.5rem;
+      margin-bottom: 2em;
+    }
+
+    .controls-container {
+      .control {
+        border: solid 2px $orange;
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        display: inline-block;
+      }
+    }
   }
-  p {
-    font-family: $body-font;
-    width: 30%;
-    margin-bottom: 2em;
+  .card-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 40%;
+
+    .card {
+      border: solid 1px $orange;
+      width: 10em;
+      display: inline-block;
+    }
   }
+}
+
+.test {
+  fill: red;
 }
