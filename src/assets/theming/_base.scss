@@ -41,12 +41,13 @@ header {
   padding-left: 2.5em;
   padding-right: 2.5em;
 
-  div {
+  .logo {
     border: solid 1px white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100px;
+    flex: none;
   }
 
   nav {
@@ -77,22 +78,26 @@ header {
   }
 }
 
-footer {
-  font-family: $display-font;
-  background-color: $orange;
-  height: 4em;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
+.landing-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
+  justify-content: space-between;
 
-footer > p {
-  font-size: 3rem;
-  color: $purple;
-  text-align: center;
+  footer {
+    font-family: $display-font;
+    background-color: $purple;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer > p {
+    font-size: 3rem;
+    color: $orange;
+    text-align: center;
+  }
 }
 
 .regular-page {
@@ -123,6 +128,7 @@ footer > p {
         width: 2em;
         height: 2em;
         display: inline-block;
+        background: $purple;
       }
     }
   }
@@ -140,6 +146,11 @@ footer > p {
   }
 }
 
-.test {
-  fill: red;
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
