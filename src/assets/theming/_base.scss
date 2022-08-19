@@ -109,7 +109,7 @@ header {
   height: 100vh;
 
   .text-controls-container {
-    width: 40%;
+    width: 30%;
     h1 {
       font-family: $display-font;
       font-size: 6rem;
@@ -122,13 +122,42 @@ header {
     }
 
     .controls-container {
-      .control {
-        border: solid 2px $orange;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      button {
         border-radius: 50%;
-        width: 2em;
-        height: 2em;
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+      }
+
+      .control {
+        border: solid 3px $orange;
         display: inline-block;
-        background: $purple;
+        background-color: $purple;
+      }
+
+      .control:hover {
+        background-color: $orange;
+      }
+
+      .control:hover svg {
+        fill: $purple;
+      }
+
+      .control svg {
+        fill: $orange;
+      }
+
+      .control[disabled] {
+        border: #ccc solid 3px;
+        pointer-events: none;
+      }
+
+      .control[disabled] > svg {
+        fill: #ccc;
       }
     }
   }
@@ -136,12 +165,28 @@ header {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    width: 40%;
+    width: 50%;
 
-    .card {
-      border: solid 1px $orange;
-      width: 10em;
+    .card-scroll {
       display: inline-block;
+    }
+
+    .flex-card {
+      border: solid 2px $orange;
+      border-radius: 13px 13px 0 0;
+      width: 20em;
+      display: flex;
+      flex-direction: column-reverse;
+
+      img {
+        border-radius: 13px 13px 0 0;
+      }
+    }
+
+    .card-scroll :hover {
+      border-top: 10px solid red;
+      border-right: 10px solid red;
+      border-bottom: 10px solid red;
     }
   }
 }

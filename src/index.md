@@ -3,7 +3,7 @@ layout: page
 ---
 
 <div class="landing-page">
-    <img src="./assets/images/test-cover.jpeg" alt="Girl in a jacket" width="100%">
+    <img src="./assets/images/cover.jpg" alt="Portrait of the musicians in the Fibre trio" width="100%">
     <footer>
         <p>A classical trio playing contemporary music</p>
     </footer>
