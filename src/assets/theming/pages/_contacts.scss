@@ -1,0 +1,19 @@
+.contact-page {
+  padding: 5.5em 0 3.5em 3.5em;
+  background-color: $purple;
+  color: white;
+  height: 100vh;
+
+  h1 {
+    font-family: $display-font;
+    font-size: 6rem;
+    margin-bottom: 1em;
+  }
+
+  a {
+    font-family: $body-font;
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1em;
+  }
+}

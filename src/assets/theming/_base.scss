@@ -31,4 +31,8 @@ body {
   @include breakpoint-md {
     font-size: 1.8rem;
   }
+
+  ul {
+    list-style: none;
+  }
 }
