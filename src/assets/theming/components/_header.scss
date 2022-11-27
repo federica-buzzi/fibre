@@ -1,0 +1,36 @@
+header {
+  align-items: center;
+  background-color: $orange;
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    flex: none;
+  }
+
+  nav {
+    font-size: 3rem;
+    color: $purple;
+    font-family: $display-font;
+
+    li {
+      display: inline-block;
+      margin-left: 2em;
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

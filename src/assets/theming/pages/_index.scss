@@ -6,7 +6,7 @@
     flex: 1 0 auto;
   }
 
-  footer {
+  div {
     font-family: $display-font;
     background-color: $purple;
     height: 4em;
@@ -17,7 +17,7 @@
     flex-shrink: 0;
   }
 
-  footer > p {
+  div > p {
     font-size: 3rem;
     color: $orange;
     text-align: center;

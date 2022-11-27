@@ -1,7 +1,42 @@
 ---
+layout: page
 eleventyNavigation:
   key: news
   order: 3
 ---
-
-<h1>News page</h1>
+{% set categories =  collections.categoryList %}
+<div class="news-page">
+  <div class="title-nav-container">
+    <h1>News</h1>
+    <nav role="navigation" aria-label="category navigation" >
+      <ul>
+        <li class="category__link {{ ' active' if page.url == '/blog/'}}">
+          <a class="category__link" 
+            href="/blog"
+            {{ "aria-current" if page.url === "/blog/" }}
+              >all</a>
+        </li>
+        {%- for category in categories %}
+        {% set catUrl = ["/blog/", category.key, "/" ] |  join %}
+        <li class="category__link {{ ' active' if page.url == catUrl }}">
+          <a href="{{ catUrl }}"
+          {{ "aria-current" if page.url == catUrl }}>
+            {{ category.key }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+   <ul class="cards-container">
+    <li class="card">
+      <article class="card-content">
+        <h2>Goethe Institut</h2>
+        <p>Rome, IT</p>
+        <p>4 September 2022</p>
+        <a href="https://christianheilmann.com/2020/11/26/back-to-basics-creating-a-clickable-card-interface-in-plain-html-css-and-javascript/" aria-label="More information on Daniela Nocentini"class="cta">More info</a>
+        <img src="../assets/images/daniela-card.jpg" alt="Portrait of Daniela Nocentini" width="100%">
+      <article> 
+    </li>
+  </ul>
+</div>
